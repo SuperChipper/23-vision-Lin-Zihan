@@ -1,0 +1,11 @@
+# compile files and directories
+*build
+*debug
+data
+*pycache*
+# midea files
+*.png
+*.jpg
+*.jpeg
+*.avi
+*.mp4

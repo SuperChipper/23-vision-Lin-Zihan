@@ -187,8 +187,8 @@ void Rrect::find(Detect image) {
             if ((rec.size.width / rec.size.height > 1.9) && (rec.size.width / rec.size.height < 16)) {
                 for (auto &cri: critical_rect) {
                     Point2f ptr = cri.center;
-                    if ((abs(ptr.x - rec.center.x) > 1.9* rec.size.width) &&
-                        (abs(ptr.x - rec.center.x) < 4.4 * rec.size.width) &&
+                    if ((abs(ptr.x - rec.center.x) > 1.6* rec.size.width) &&
+                        (abs(ptr.x - rec.center.x) < 4.5 * rec.size.width) &&
                         ((ptr.y - rec.center.y == 0) || (abs(ptr.x - rec.center.x) / abs(ptr.y - rec.center.y) > 4))
                                 &&(abs(cri.angle-rec.angle)<4)) {
                         if((rec.size.width>0.7*cri.size.width)&&(0.7*rec.size.width<cri.size.width))
