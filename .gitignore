@@ -3,6 +3,8 @@
 *debug
 data
 *pycache*
+.idea
+.vs*
 # midea files
 *.png
 *.jpg
